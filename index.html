@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas — Developer Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="grid-bg"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#sobre" onclick="closeMenu()"><span class="m-num">01</span> Sobre</a>
+    <a href="#skills" onclick="closeMenu()"><span class="m-num">02</span> Skills</a>
+    <a href="#projetos" onclick="closeMenu()"><span class="m-num">03</span> Projetos</a>
+    <a href="#experiencia" onclick="closeMenu()"><span class="m-num">04</span> Experiência</a>
+    <a href="#contato" onclick="closeMenu()"><span class="m-num">05</span> Contato</a>
+    <div class="mobile-menu-footer">Lucas · Dev Portfolio</div>
+  </div>
+
+  <nav>
+    <a href="#" class="nav-logo">Lucas.</a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="nav-status">
+      <div class="status-dot"></div>
+      Disponível para projetos
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-tag"><span>◆</span> Full Stack Developer</div>
+        <h1 class="hero-name">Olá,<br>sou <span>Lucas</span>.</h1>
+        <p class="hero-role">Construo interfaces de alta performance onde <em>design encontra</em> de forma precisa.</p>
+        <div class="hero-cta">
+          <a href="#projetos" class="btn-primary">Ver Projetos →</a>
+          <a href="#contato" class="btn-ghost">Entre em Contato</a>
+        </div>
+      </div>
+
+      <!-- 3D AI CHARACTER -->
+      <div class="hero-3d">
+        <canvas id="ai-canvas"></canvas>
+
+      </div>
+
+      <div class="hero-code">
+        <div class="code-line"><span class="ln">1</span><span><span class="kw">const</span> <span class="fn">lucas</span> = {</span></div>
+        <div class="code-line"><span class="ln">2</span><span> role: <span class="str">'Full Stack Dev'</span>,</span></div>
+        <div class="code-line"><span class="ln">3</span><span> stack: [<span class="str">'React'</span>, <span class="str">'Node'</span>],</span></div>
+        <div class="code-line"><span class="ln">4</span><span> available: <span class="kw">true</span>,</span></div>
+        <div class="code-line"><span class="ln">5</span><span>}<span class="code-cursor"></span></span></div>
+      </div>
+
+      <div class="hero-scroll"><span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="stack-row">
+      <div class="stack-track">
+        <span class="stack-item">React</span><span class="stack-item">TypeScript</span><span class="stack-item">Node.js</span><span class="stack-item">Next.js</span><span class="stack-item">Tailwind</span><span class="stack-item">Git</span><span class="stack-item">React</span><span class="stack-item">TypeScript</span><span class="stack-item">Node.js</span><span class="stack-item">Next.js</span><span class="stack-item">AWS</span><span class="stack-item">Wordpress</span>
+        <span class="stack-item">photshop</span><span class="stack-item">Ilustration</span><span class="stack-item">Javascript</span><span class="stack-item">css</span>
+        <span class="stack-item">Html</span><span class="stack-item">Python</span><span class="stack-item">React</span><span class="stack-item">TypeScript</span><span class="stack-item">Node.js</span><span class="stack-item">Next.js</span><span class="stack-item">Tailwind</span>
+      </div>
+    </div>
+
+    <!-- Sobre -->
+    <section id="sobre">
+      <div class="section-label reveal">Sobre mim</div>
+      <h2 class="section-title reveal">Quem sou<br>eu?</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Sou um desenvolvedor full stack apaixonado por criar produtos digitais que <strong>combinam estética e funcionalidade</strong> de forma elegante. Trabalho com o ciclo completo — do design de sistemas até a entrega em produção.</p>
+          <p>Tenho experiência em construir aplicações web de alta performance. Acredito que o <strong>bom código é aquele que qualquer um entende</strong> — não só quem escreveu.</p>
+          <p>Quando não estou codando, estou estudando novas tecnologias, contribuindo para open source ou explorando interfaces de usuário inovadoras.</p>
+        </div>
+        <div class="about-stats reveal reveal-delay-2">
+          <div class="stat">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">Anos de experiência</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">20+</div>
+            <div class="stat-label">Projetos entregues</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Commits feitos</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">01</div>
+            <div class="stat-label">Dev focado</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-label reveal">Especialidades</div>
+      <h2 class="section-title reveal">O que<br>construo</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal"><span class="skill-icon">⬡</span>
+          <div class="skill-name">Frontend</div>
+          <p class="skill-desc">Interfaces que encantam — rápidas, acessíveis e pixel-perfect em qualquer dispositivo.</p>
+          <div class="skill-tags"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Tailwind</span><span class="tag">Wordpress</span></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-1"><span class="skill-icon">⬡</span>
+          <div class="skill-name">Backend</div>
+          <p class="skill-desc">APIs sólidas e arquiteturas que suportam crescimento sem dor de cabeça.</p>
+          <div class="skill-tags"><span class="tag">Node.js</span><span class="tag">Python</span><span class="tag">REST</span></div>
+        </div>
+        <div class="skill-card reveal reveal-delay-2"><span class="skill-icon">⬡</span>
+          <div class="skill-name">Designer</div>
+          <p class="skill-desc">Transformando ideias em experiências visuais que conectam marcas e pessoas.</p>
+          <div class="skill-tags"><span class="tag">Photshop</span><span class="tag">Ilustration</span><span class="tag">Ligthroom</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projeto -->
+    <section id="projetos">
+      <div class="section-label reveal">Portfólio</div>
+      <h2 class="section-title reveal">Projetos<br>selecionados</h2>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-num">01</div><span class="project-badge">Javascript · Html · Css </span>
+          <div class="project-name">Calendário de tarefa</div>
+          <p class="project-desc">Este é um Calendário de Tarefas simples desenvolvido com HTML, CSS e JavaScript. O objetivo deste projeto é fornecer uma interface fácil e intuitiva para organizar e gerenciar tarefas diáriase e com Funcionalidades</p>
+          <div class="skill-tags" style="margin-bottom:24px"><span class="tag">Javascript</span><span class="tag">Html</span><span class="tag">Css</span></div>
+          <a href="calendario-tarefas-pc8j.vercel.app/ " class="project-link" target="_blank">Ver projeto</a>
+        </div>
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-num">02</div><span class="project-badge">E-commerce · React</span>
+          <div class="project-name">Loja <br> online</div>
+          <p class="project-desc">Loja virtual com checkout otimizado, reduzindo aban.dono de carrinho em 40% Integração com múltiplos gateways de pagamento.</p>
+          <div class="skill-tags" style="margin-bottom:24px"><span class="tag">React</span><span class="tag">Javascript</span><span class="tag">Css</span></div><a href=" https://gatsby-ecommerce-theme.netlify.app/" class="project-link">Ver projeto</a>
+        </div>
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-num">03</div><span class="project-badge">institucional </span>
+          <div class="project-name">Mecha<br>Produções</div>
+          <p class="project-desc">Desenvolvi este site institucional moderno e responsivo para apresentar os serviços da empresa de forma profissional, destacando sua identidade visual, presença digital e facilitando o contato com clientes.</p>
+          <div class="skill-tags" style="margin-bottom:24px"><span class="tag">Html</span><span class="tag">JavaScript</span><span class="tag">Css</span></div><a href="https://mechaprducoes.netlify.app/" class="project-link">Ver projeto</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiência-->
+    <section id="experiencia">
+      <div class="section-label reveal">Trajetória</div>
+      <h2 class="section-title reveal">Experiência</h2>
+      <div class="exp-layout">
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-date">2018 — Presente</div>
+            <div class="timeline-role"></div>
+            <div class="timeline-company">🎙️ Unisom Brasil · São Paulo, SP</div>
+            <p class="timeline-desc">Atuo em uma empresa de dublagem, onde desenvolvo e mantenho websites, garantindo a melhor experiência de
+              usuário e interface gráfica. Também sou responsável pela gestão das redes sociais, criando estratégias de
+              marketing digital, monitorando engajamento e gerando conteúdo visual para ampliar a presença online da empresa.
+              Além disso, elaboro contratos e documentos relacionados, assegurando clareza e conformidade nos processos
+              administrativos da empresa.</p>
+          </div>
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-date">2014 — 2018</div>
+            <div class="timeline-role">Frontend Developer</div>
+            <div class="timeline-company">🎨 MP Films· Remoto</div>
+            <p class="timeline-desc">Realizei a edição de fotos para campanhas e projetos, além de gerenciar contratos, planilhas e documentos
+              administrativos, contribuindo para a organização e fluxo de trabalho da empresa.
+              Desenvolvi e mantive websites, otimizando a experiência do usuário e a funcionalidade. Atuei na criação de conteúdo
+              e gerenciamento de redes sociais, aprimorando a presença digital da empresa. Implementação de estratégias e
+              design responsivo para aumentar o tráfego e engajamento onlin</p>
+          </div>
+          <div class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-date">2023-Atual</div>
+            <div class="timeline-role">Projeto Relevante</div>
+            <div class="timeline-company">🎨 Agência Digital Rocket Tech</div>
+            <p class="timeline-desc">Profissional de Tecnologia da Informação com ampla experiência em web design e design gráfico. Atualmente à
+              frente da Rocket Tech, desenvolvendo soluções criativas e funcionais para websites e identidade visual.
+              Competências em gestão de projetos, criação de layouts otimizados para UX/UI, e implementação de estratégias
+              digitais para impulsionar a presença online de empresas. Capacidade comprovada de colaborar com equipes
+              multifuncionais e entregar resultados dentro de prazos estipulados. Proativo e focado em inovação, com sólida
+              compreensão das tendências tecnológicas atuais.
+
+              <a href="https://rockettech.netlify.app/" style="text-decoration: none;color:#E8F4F0;">Veja Rocket Tech</a>
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <div class="section-label reveal">Vamos conversar</div>
+      <h2 class="section-title reveal">Tem um projeto?<br>Me chama.</h2>
+      <div class="contact-inner">
+        <p class="contact-text reveal">Estou aberto para projetos freelance, oportunidades full-time e colaborações interessantes. Se você tem uma ideia, vamos transformá-la em realidade.</p>
+        <a href="mailto:lucasmechinha23@gmail.com" class="contact-email reveal">lucasmechinha23@gmail.com</a>
+        <div class="contact-links reveal reveal-delay-1">
+          <a href="https://github.com/lucasmechinha123" class="contact-link" target="_blank">⌥ GitHub</a>
+          <a href="https://www.linkedin.com/in/lucas-cavalcantedev/" class="contact-link" target="_blank">in LinkedIn</a>
+          <a href="https://www.instagram.com/lucasmechinha11/" class="contact-link" target="_blank">instagram</a>
+          <a href="./CV/Lucas Cavalcante.pdf" class="contact-link" target="_blank">↓ Download CV</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!--Botão UP-->
+  <a href="#" class="back-top" id="backTop" aria-label="Voltar ao topo">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 14V4M9 4L4 9M9 4L14 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </a>
+  </div>
+  <!--Libras-->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <footer>
+    <span>© 2026 Lucas Cavalcante. Todos os direitos reservados.</span>
+  </footer>
+  <script src="./funciton.js"></script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+</body>
+
+</html>
